@@ -3,6 +3,7 @@
 ob_start();
 
 session_start();
+//session_destroy();
 
 //DEFINE PATH CONSTANTS
 defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);

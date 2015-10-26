@@ -25,6 +25,8 @@
 
                 <div class="row">
 
+                    <?php // echo $_SESSION['product_' . $_GET['add']] +=1; ?>
+
                     <?php get_products(); ?>
 
 

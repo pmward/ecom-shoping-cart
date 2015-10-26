@@ -1,12 +1,12 @@
 <?php require_once("../resources/config.php"); ?>
+<?php require_once("cart.php"); ?>
 
 <?php include(TEMPLATE_FRONT . DS . "header.php" ) ?>
 
-<?php
+<?php //echo $_SESSION['product_2']; ?>
 
-$_SESSION['product_1'] = 4;
+   <?php var_dump($_SESSION); ?>
 
-?>
 
     <!-- Page Content -->
     <div class="container">
@@ -16,6 +16,7 @@ $_SESSION['product_1'] = 4;
 
 <div class="row">
 
+      <h4 class="text-center bg-danger"><?php display_message(); ?></h4>
       <h1>Checkout</h1>
 
 <form action="">
@@ -30,13 +31,7 @@ $_SESSION['product_1'] = 4;
           </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>apple</td>
-                <td>$23</td>
-                <td>3</td>
-                <td>2</td>
-
-            </tr>
+            <?php cart(); ?>
         </tbody>
     </table>
 </form>
