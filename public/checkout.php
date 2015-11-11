@@ -5,7 +5,10 @@
 
 <?php //echo $_SESSION['product_2']; ?>
 
-   <?php var_dump($_SESSION); ?>
+    <pre>
+        <?php var_dump($_SESSION); ?>
+    </pre>
+
 
 
     <!-- Page Content -->
@@ -36,7 +39,7 @@
             <?php cart(); ?>
         </tbody>
     </table>
-    <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+    <input type="image" name="upload" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
             alt="PayPal - The safer, easier way to pay online">
 </form>
 
